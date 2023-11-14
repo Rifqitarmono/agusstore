@@ -1,27 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="images/chesslogo.jpg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
-    <title>Chess Game - Rifqi</title>
-</head>
-<body>
-    <div class="container">
-        <h1>RifqiGaming Chess Game</h1>
-        <div class="board" id="board"></div>
-        <div class="buttons">
-            <button class="play-again">Play Again</button>
-            <button class="set-pos">Set Position</button>
-            <button class="flip-board">Flip Board</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RifqiStore Website Top Up Games Murah" />
+    <meta
+      name="keywords"
+      content="web top up, website top up games, top up murah, top up mobile legends murah, jasa joki murah, joki mobile legends murah"
+    />
+    <meta name="author" content="digitalkios" />
+    <title>Rifqi Store - Top Up Game Termurah dan Terpecaya</title>
+    <link
+      rel="shortcut icon"
+      href="/images/RifqiStore-logo.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <span>
+        <a href="/" class="logo"><span class="logo logo-z">Rifqi</span>Store</a>
+      </span>
+      <nav class="navbar">
+        <div class="navbar-wrap">
+          <ul class="hidden navbar-ul">
+            <li><a href="">Produk</a></li>
+            <li><a href="">Tentang Kami</a></li>
+          </ul>
         </div>
-        <div id="move-history" class="move-history"></div>
+        <span class="slogan">
+          <h4>Top Up Game & Voucher Murah</h4>
+        </span>
+        <button class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <div class="swiper container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/banner-rifqitore.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/chessboard-1.0.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
-    <script src="script.js"></script>
-</body>
+
+    <main class="container">
+      <section class="section-popular">
+        <h1 class="popular-game">Game Populer</h1>
+        <div class="grid grid-cols-6 grid-cols-3">
+          <div class="mobile-legends_img">
+            <a href="games/mobile-legends.html">
+              <img src="images/mlbb.jpg" alt="Mobile Legends" />
+              <p>Mobile Legends</p>
+            </a>
+          </div>
+          <div class="free-fire_img">
+            <a href="games/free-fire.html">
+              <img src="images/ff.png" alt="Free Fire" />
+              <p>Free Fire</p>
+            </a>
+          </div>
+          <div class="free-fire_img">
+            <a href="games/free-fire-max.html">
+              <img src="images/ff-max.png" alt="Free Fire Max" />
+              <p>Free Fire Max</p>
+            </a>
+          </div>
+          <div class="cod-mobile_img">
+            <a href="games/call-of-duty-mobile.html">
+              <img src="images/codm.jpg" alt="COD Mobile" />
+              <p>COD Mobile</p>
+            </a>
+          </div>
+          <div class="fifa-mobile_img">
+            <a href="games/fifa-mobile.html">
+              <img
+                src="images/fifa-mobile-2022_rry2.1200.webp"
+                alt="FIFA Mobile"
+              />
+              <p>FIFA Mobile</p>
+            </a>
+          </div>
+          <div class="e-football_img">
+            <a href="games/e-football.html">
+              <img src="images/e-football.jpeg" alt="eFootballs" />
+              <p>eFootball</p>
+            </a>
+          </div>
+          <div class="sausage-man_img">
+            <a href="games/sausage-man.html">
+              <img src="images/sausage-man.jpg" alt="Sausage Man" />
+              <p>Sausage Man</p>
+            </a>
+          </div>
+          <div class="lord-mobile_img">
+            <a href="games/lords-mobile.html">
+              <img src="images/lord-mobile.jpeg" alt="Lords Mobile" />
+              <p>Lords Mobile</p>
+            </a>
+          </div>
+          <div class="arena-of-valor_img">
+            <a href="games/arena-of-valor.html">
+              <img src="images/aov.jpg" alt="Arena of Valor" />
+              <p>Arena of Valor</p>
+            </a>
+          </div>
+          <div class="life-after_img">
+            <a href="games/life-after.html">
+              <img src="images/lifeafter-logo.webp" alt="Life After" />
+              <p>Life After</p>
+            </a>
+          </div>
+          <div class="sg_img">
+            <a href="games/stumble-guys.html">
+              <img src="images/Stumble Guys-29ff.webp" alt="Stumble Guys" />
+              <p>Stumble Guys</p>
+            </a>
+          </div>
+          <div class="pb_img">
+            <a href="games/point-blank.html">
+              <img src="images/PB-c8c8.webp" alt="Point Blank" />
+              <p>Point Blank</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="footer">
+        <div class="description">
+          <span>
+            <a href="/" class="logo"
+              ><span class="logo logo-z">Rifqi</span>Store</a
+            >
+          </span>
+          <br />
+          adalah salah satu website top up voucher game termurah di Indonesia.
+        </div>
+        <div class="menu">
+          <h3>Menu</h3>
+          <ul class="navbar-ul">
+            <li><a href="">Produk</a></li>
+            <li><a href="">Tentang Kami</a></li>
+          </ul>
+        </div>
+        <div class="payment-footer">
+          <h3>Metode Pembayaran</h3>
+          <div class="payment-grid">
+            <div>
+              <img src="images/ovo.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/dana.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/gopay.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/qris.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/bni.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/bri.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/alfamart.jpg" alt="" />
+            </div>
+            <div>
+              <img src="images/indomaret.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright &copy;2022 RifqiStore. All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="src/js/swiper.js"></script>
+    <script src="src/js/hamburger.js"></script>
+    <script src="src/js/keys.js"></script>
+  </body>
 </html>
